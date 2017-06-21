@@ -422,45 +422,7 @@ td,
 th {
   padding: 0;
 }
-body, div, span {
-  box-sizing: border-box;
-  position: relative;
 
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-
-  border: 0 solid black;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1F1E34;
-  color: #FFF;
-  font-family: "Avenir Next",
-    "HelveticaNeue-Light",
-    "Helvetica Neue Light",
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    "Lucida Grande",
-    sans-serif;
-  font-weight: 100;
-}
 
 h1 {
   font-size: 64px;
@@ -490,6 +452,11 @@ a:hover {
 #main {
   width: 100%;
   height: 100%;
+}
+
+object {
+  height: 100%;
+  /*width: 100%;*/
 }
 
 .section {

@@ -16,17 +16,19 @@
             crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="main">
+        <div id="mainWrapper">
 
         </div>
         <script type="text/javascript">
             window.onload = function(){
                 var feedSrc = location.search.split('feed=')[1];
                 console.log(feedSrc);
+                var windowHeight = $( window ).height();
 
-                $("#main")
-                    .html('<object data="' + feedSrc + '"/>');
+                // testing: http://chocoluffy.com/media/?feed=http://chocoluffy.com
 
+                $("#mainWrapper")
+                    .html('<iframe style="border-style: none;width: 100%; height: ' + windowHeight + 'px;" src="' + feedSrc + '"></iframe>');
             };
         </script>
     </body>

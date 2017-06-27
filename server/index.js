@@ -27,49 +27,58 @@ app.get('/', function (req, res) {
                 });
 
                 $('body').append(
-                    `<div style="height: 49px; display:block; width:100%;" />
+                    `<div style="height: 70px; display:block; width:100%;" />
                     <div
                         class="banner"
                         style="
-                            background-color:#fff;
+                            background: linear-gradient(-60deg, #000, #666);
                             width:100%;
-                            height:49px;
-                            box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+                            height:70px;
+                            box-shadow: 0 -7px 10px -5px rgba(28, 64, 85, 0.4);
                             position:fixed;
                             bottom:0px;
                             "
                      >
-                        <div>
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                        ">
+                        <div style="
+                                height:70px;
+                                width:70px;
+                                background: linear-gradient(60deg, #40cca0, #47a3da);
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                        ">
                             <img
-                                 src="http://chocoluffy.com/media/server/static/icon_1024.png"
+                                 src="https://firebasestorage.googleapis.com/v0/b/elema-f0ca4.appspot.com/o/images%2Ficon.svg?alt=media&token=69368b7c-becd-4f80-9ee1-6dd311e44148"
                                  style="
-                                    position: absolute;
-                                    bottom: 1em;
-                                    height: 40px;
-                                    width: 40px;
-                                    border-radius: 2px;
-                                    margin-left: 1em;
-                                    box-shadow: 0 1px 5px #A9DFFF, inset 0 0 3px;
+                                    width: 35px;
                                 "
                             >
                         </div>
                         <div
                             style="
-                                display: flex;
+                                display: inline-flex;
                                 height: 100%;
                                 margin: 0 auto;
                                 align-items: center;
                                 justify-content: center;
-                                color: #262626;
-                                font-size: 0.82em;
-                                font-weight: 300;
+                                color: #fff;
+                                padding-left: 15px;
                             "
-                        >『鲸语』智能聚合本地最实用的资讯</div>
+                        >
+                            <span>
+                                <span style="font-size: 16px; font-weight: 500; line-height:20px;-webkit-user-select: none;">鲸语</span><br>
+                                <span style="font-size: 12px; font-weight: 300; line-height:14px;-webkit-user-select: none;">智能聚合本地最实用的资讯</span>
+                            </span>
+                        </div>
+                        </div>
                         <div style="
                                     position: absolute;
-                                    background-color: #262626;
                                     bottom: 0em;
-                                    height: 49px;
+                                    height: 70px;
                                     right: 0em;
                                     min-width: 20px;
                                     max-width: 70px;
@@ -87,6 +96,9 @@ app.get('/', function (req, res) {
                                 style="
                                     color: #fff;
                                     font-weight: 300;
+                                    border: 1px solid #fff;
+                                    border-radius: 40px;
+                                    padding: 5px 10px;
                                 "
                             >去试试</a>
                         </div>

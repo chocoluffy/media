@@ -43,11 +43,11 @@ app.get('/', function (req, res) {
                                  src="http://chocoluffy.com/media/server/static/icon_1024.png"
                                  style="
                                     position: absolute;
-                                    bottom: 15px;
+                                    bottom: 1em;
                                     height: 60px;
                                     width: 60px;
                                     border-radius: 15px;
-                                    margin-left: 10px;
+                                    margin-left: 1em;
                                     box-shadow: 0 1px 5px #A9DFFF, inset 0 0 3px;
                                 "
                             >
@@ -59,10 +59,32 @@ app.get('/', function (req, res) {
                                 align-items: center;
                                 justify-content: center;
                                 color: #fff;
-                                font-size: 14px;
+                                font-size: 0.82em;
                                 font-weight: 100;
                             "
-                        >用人工智能推荐多伦多最新资讯</div>
+                        >『鲸语』智能聚合本地最实用的资讯</div>
+                        <div style="
+                                    position: absolute;
+                                    border: 1px solid #A9DFFF;
+                                    border-radius: 5px;
+                                    bottom: 0.8em;
+                                    right: 1em;
+                                    min-width: 20px;
+                                    max-width: 70px;
+                                    font-size: 0.82em;
+                                    display: block;
+                                    padding: 3px 9px;
+                                    text-align: center;
+                            "
+                        >
+                            <a 
+                                href="https://appsto.re/ca/klNuhb.i"
+                                style="
+                                    color: white;
+                                    font-weight: 100;
+                                "
+                            >去试试</a>
+                        </div>
                      </div>`
                 );
                 

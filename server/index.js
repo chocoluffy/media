@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
         }
     };
     request(options, function (error, response, html) {
-        if (!error && response.statusCode == 200) { 
+        if (!error && response.statusCode == 200) {
             if (feedsrc.indexOf('weixin') > -1) { // if comes from weixin source.
                 var $ = cheerio.load(html);
                 // console.log(html);
@@ -27,78 +27,93 @@ app.get('/', function (req, res) {
                 });
 
                 $('body').append(
-                    `<div 
+                    `<div style="height: 70px; display:block; width:100%;" />
+                    <div
                         class="banner"
                         style="
-                            background-color:#262626;
+                            background: linear-gradient(-60deg, #000, #666);
                             width:100%;
-                            height:50px;
-                            box-shadow: 0px 1px 50px #5E5E5E;
+                            height:70px;
+                            box-shadow: 0 -7px 10px -5px rgba(28, 64, 85, 0.4);
                             position:fixed;
                             bottom:0px;
                             "
-                     > 
-                        <div>
+                     >
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                        ">
+                        <div style="
+                                height:70px;
+                                width:70px;
+                                background: linear-gradient(60deg, #40cca0, #47a3da);
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                        ">
                             <img
-                                 src="http://chocoluffy.com/media/server/static/icon_1024.png"
+                                 src="https://firebasestorage.googleapis.com/v0/b/elema-f0ca4.appspot.com/o/images%2Ficon.svg?alt=media&token=69368b7c-becd-4f80-9ee1-6dd311e44148"
                                  style="
-                                    position: absolute;
-                                    bottom: 1em;
-                                    height: 60px;
-                                    width: 60px;
-                                    border-radius: 15px;
-                                    margin-left: 1em;
-                                    box-shadow: 0 1px 5px #A9DFFF, inset 0 0 3px;
+                                    width: 35px;
                                 "
                             >
                         </div>
-                        <div 
+                        <div
                             style="
-                                display: flex;
+                                display: inline-flex;
                                 height: 100%;
-                                max-width: 51%;
                                 margin: 0 auto;
                                 align-items: center;
                                 justify-content: center;
                                 color: #fff;
-                                font-size: 0.82em;
-                                font-weight: 100;
+                                padding-left: 15px;
                             "
-                        >『鲸语』智能聚合本地最实用的资讯</div>
+                        >
+                            <span>
+                                <span style="font-size: 16px; font-weight: 500; line-height:20px;-webkit-user-select: none;">鲸语</span><br>
+                                <span style="font-size: 12px; font-weight: 300; line-height:14px;-webkit-user-select: none;">智能聚合本地最实用的资讯</span>
+                            </span>
+                        </div>
+                        </div>
                         <div style="
                                     position: absolute;
-                                    border: 1px solid #A9DFFF;
-                                    border-radius: 5px;
-                                    bottom: 0.8em;
-                                    right: 1em;
+                                    bottom: 0em;
+                                    height: 70px;
+                                    right: 0em;
                                     min-width: 20px;
                                     max-width: 70px;
                                     font-size: 0.82em;
-                                    display: block;
-                                    padding: 3px 9px;
+                                    display: flex;
+                                    padding-left: 1em;
+                                    padding-right: 1em;
                                     text-align: center;
+                                    justify-content: center;
+                                    align-items: center;
                             "
                         >
-                            <a 
+                            <a
                                 href="https://appsto.re/ca/klNuhb.i"
                                 style="
-                                    color: white;
-                                    font-weight: 100;
+                                    color: #fff;
+                                    font-weight: 300;
+                                    border: 1px solid #fff;
+                                    border-radius: 40px;
+                                    padding: 5px 10px;
                                 "
                             >去试试</a>
                         </div>
                      </div>`
                 );
-                
+
                 res.send($.html());
             }
             else {
                 res.send("else");
-            } 
+            }
         };
     });
 })
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
-})  
+})

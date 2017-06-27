@@ -38,7 +38,31 @@ app.get('/', function (req, res) {
                             bottom:0px;
                             "
                      > 
-                     hihi
+                        <div>
+                            <img
+                                 src="http://chocoluffy.com/media/server/static/icon_1024.png"
+                                 style="
+                                    position: absolute;
+                                    bottom: 15px;
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius: 15px;
+                                    margin-left: 10px;
+                                    box-shadow: 0 1px 5px #A9DFFF, inset 0 0 3px;
+                                "
+                            >
+                        </div>
+                        <div 
+                            style="
+                                display: flex;
+                                height: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: 100;
+                            "
+                        >用人工智能推荐多伦多最新资讯</div>
                      </div>`
                 );
                 

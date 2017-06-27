@@ -27,8 +27,23 @@
 
                 // testing: http://chocoluffy.com/media/?feed=http://chocoluffy.com
 
-                $("#mainWrapper")
-                    .html('<iframe style="border-style: none;width: 100%; height: ' + windowHeight + 'px;" src="' + feedSrc + '"></iframe>');
+                // scrape html from wechat articles page.
+                $.ajax({
+                    url:feedSrc,
+                    type:'GET',
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+
+
+                // inject iframe element.
+                // $("#mainWrapper")
+                //     .html('<iframe id="wechat" style="border-style: none;width: 100%; height: ' + windowHeight + 'px;" src="' + feedSrc + '"></iframe>');
+                
+                // // update iframe image attibute.
+                // var wimg = $("#wechat").contents().find("img").css("data-src");
+                // console.log(wimg);
             };
         </script>
     </body>

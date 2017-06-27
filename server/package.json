@@ -1,5 +1,5 @@
 {
-  "name": "ilovereact",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.9.3",
     "express": "^4.15.3",
-    "gsap": "^1.18.0",
-    "normalize.css": "^3.0.3"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.0.2",
-    "postcss-cli": "^2.1.0",
-    "postcss-import": "^7.0.0"
+    "request": "^2.81.0"
   }
 }

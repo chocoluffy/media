@@ -56,6 +56,8 @@ app.get('/', function (req, res) {
                             style="
                                 display: flex;
                                 height: 100%;
+                                max-width: 51%;
+                                margin: 0 auto;
                                 align-items: center;
                                 justify-content: center;
                                 color: #fff;
